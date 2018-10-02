@@ -10,4 +10,13 @@ selenium-debug.log
 image
 .vscode
 .idea
-app/www/*
+www
+*.mode1v3
+*.perspectivev3
+*.pbxuser
+platforms/ios/build
+platforms/android/build.xml
+platforms/android/local.properties
+platforms/android/gradlew
+platforms/android/gradlew.bat
+platforms/android/gradle
