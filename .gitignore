@@ -9,3 +9,6 @@ test/e2e/reports
 selenium-debug.log
 image
 .vscode/
+app/www/
+app/www/js
+dist/static/js

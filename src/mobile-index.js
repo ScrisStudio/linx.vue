@@ -16,10 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
 */
+
 export default {
   // Application Constructor
   initialize () {
-    this.bindEvents();
+    if(process.env.LINX_AGENT == 'cordova') this.bindEvents();
   },
   // Bind Event Listeners
   //
