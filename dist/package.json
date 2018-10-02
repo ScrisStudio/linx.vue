@@ -1,0 +1,18 @@
+{
+  "name": "linxvue",
+  "version": "1.0.0",
+  "description": "Linx.vue is a CLI tool to create applications that run on Web, Mobile Phones and Standalone Devices in a go.",
+  "main": "electron.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/scris/linx.vue",
+  "keywords": [
+    "cli","vue","linx","linx.vue","linxvue"
+  ],
+  "author": "Dominik Qiu",
+  "license": "",
+  "devDependencies": {
+    "electron": "^3.0.2"
+  }
+}

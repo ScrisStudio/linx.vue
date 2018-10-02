@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="initial-scale=1,width=device-width,height=device-height,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover"><meta name=format-detection content="telephone=no"><title>Linx.vue Example</title><style>body {
+          background-color: #fdfdfd;
+          background-image: url(https://picnicss.com/web/img/optimised.svg);
+          background-repeat: no-repeat;
+          background-position-x: center;
+          background-position-y: 100%;
+          background-attachment: fixed;
+          background-size: 100% auto;
+          padding-top: constant(safe-area-inset-top);
+          /*Padding-bottom means bottom safe area. Open it if necessary.*/
+          /*padding-bottom: constant(safe-area-inset-bottom);*/
+          padding-top: env(safe-area-inset-top);
+          /*padding-bottom: env(safe-area-inset-bottom);*/
+          font-size: 32px;
+          text-align: center;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .today {
+          align-content: center;
+          text-align: center;
+        }
+        a:link {
+          color: rgb(168, 168, 168);
+          text-decoration: none;
+        }
+        a:visited {
+          color: rgb(114, 114, 114);
+          text-decoration: none;
+        }
+        a:hover {
+          color: rgb(179, 179, 179);
+          text-decoration: underline;
+        }
+        a:active {
+          color: rgb(0, 0, 0);
+          text-decoration: underline;
+        }
+        .text {
+          font-size: 14px;
+        }
+        *, *:before, *:after { 
+          max-height: 100000px; 
+        }</style><script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(normal,e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=normal?1:1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=normal?"50px": a/2*s*n+"px"},e.exports=t["default"]}]); flex(false,100, 1);</script><link href=css/app.46884383bbc6e36de5a6c40797c1c4ba.css rel=stylesheet></head><body><div id=app></div><script src=cordova.js></script><script type=text/javascript src=js/manifest.5abe310ef2fafcf81b83.js></script><script type=text/javascript src=js/vendor.b4a20455825310874cf7.js></script><script type=text/javascript src=js/app.807c4117dea7a92c0eb8.js></script></body></html>

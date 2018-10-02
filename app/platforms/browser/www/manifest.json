@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Linx Example",
+  "short_name": "Linx Example",
+  "version": "com.scrisstudio",
+  "description": "A sample Apache Cordova application.",
+  "author": "Dominik Qiu from Scris Studio",
+  "icons": [],
+  "start_url": "index.html"
+}
