@@ -8,6 +8,6 @@ test/unit/coverage
 test/e2e/reports
 selenium-debug.log
 image
-.vscode/
-app/www
-app/www/js/
+.vscode
+.idea
+app/www/*
