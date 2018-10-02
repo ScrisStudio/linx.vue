@@ -4,7 +4,7 @@
 
 Linx.vue is a CLI tool to create applications that run on Web, Mobile Phones and Standalone Devices in a go. 
 
-- It is the modified cli tool that was used in developing scristask 1.10+.
+- It is the modified cli tool that was used in developing <https://github.com/scris/scristask> 1.10+.
 - Some code is from <https://github.com/halfrost/vue-objccn>
 
 ## Build Setup
