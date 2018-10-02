@@ -72,5 +72,11 @@ Just use it like using vue-cli. (with vue-router and element-ui)
 
 You will find it easy to use.
 
+Emm ... One thing left.
+You can use `process.env.LINX_AGENT` to get which mode is user currently using.
+if you get `electron` , do things in standalone devices.
+if you get `cordova`, do things in mobile phones.
+if you get other answer or get nothing, mark it as in the web environment.
+
 ---
 Dominik Qiu from Scris Studio 
