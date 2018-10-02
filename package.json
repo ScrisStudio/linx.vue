@@ -18,6 +18,7 @@
     "cbuild": "cross-env LINX_AGENT=cordova cross-env NODE_ENV=production node build/build.app.js"
   },
   "dependencies": {
+    "ajv": "^6.5.4",
     "element-ui": "^2.4.7",
     "leancloud-storage": "^3.10.0",
     "vue": "^2.5.2",
@@ -57,7 +58,9 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "growl": "^1.10.5",
     "html-webpack-plugin": "^2.30.1",
+    "https-proxy-agent": "^2.2.1",
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",
     "nightwatch": "^0.9.12",
