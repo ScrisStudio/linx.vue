@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
-dist/
+/dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -9,6 +9,5 @@ test/e2e/reports
 selenium-debug.log
 image
 .vscode/
-app/www/
-app/www/js
-dist/static/js
+app/www
+app/www/js/

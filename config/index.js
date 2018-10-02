@@ -15,7 +15,7 @@ module.exports = {
     // Paths
     env: require('./dev.env'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: assetspp,
     proxyTable: {},
 
     // Various Dev Server settings
@@ -51,7 +51,7 @@ module.exports = {
 
   build: {
       // vue&electron
-        env: require('./prod.env'),
+        env: require("./prod.env"),
         index: path.resolve(__dirname, '../dist/index.html'),
         assetsRoot: path.resolve(__dirname, '../dist'),
         assetsSubDirectory: 'static',
