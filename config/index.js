@@ -5,8 +5,6 @@ const path = require('path')
 var assetspp = '';
 if(process.env.LINX_AGENT == 'electron') {
   assetspp = './';
-} else {
-  assetspp = '/';
 }
 
 module.exports = {

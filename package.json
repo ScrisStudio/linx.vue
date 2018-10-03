@@ -14,8 +14,8 @@
     "build": "node build/build.js",
     "edev": "cross-env LINX_AGENT=electron npm run build && electron build/electron.js",
     "ebuild": "cross-env LINX_AGENT=electron electron-packager ./dist/ scristask --platform=darwin --arch=x64 --icon=./src/assets/favicon.ico --overwrite",
-    "cdev": "cross-env LINX_AGENT=cordova node build/build.app.js",
-    "cbuild": "cross-env LINX_AGENT=cordova cross-env NODE_ENV=production node build/build.app.js"
+    "cdev": "cross-env LINX_AGENT=cordova node build/build.app.js && cd app && cordova run browser && cd ../",
+    "cbuild": "cross-env LINX_AGENT=cordova cross-env NODE_ENV=production node build/build.app.js && cd app && cordova run browser && cd ../"
   },
   "dependencies": {
     "ajv": "^6.5.4",
