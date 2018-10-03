@@ -8,11 +8,12 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+
 
 const env = require('../config/c.env')
 
-var isELECTRON = process.env.NODE_ELECTRON === 'true'
-
+var isElectron = process.env.NODE_ELECTRON === 'true'
 config.build.index = path.resolve(__dirname, '../app/www/index.html')
 config.build.assetsRoot = path.resolve(__dirname, '../app/www')
 config.build.assetsSubDirectory = ''
@@ -28,8 +29,7 @@ var webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
-    // 下面这这句话一定要加，否则会影响 mac桌面端的路径问题，当然可以自己配置其他目录
-    publicPath: isELECTRON ? path.join(__dirname, '../app/www/') : '',
+    publicPath: isElectron ? path.join(__dirname, '../app/www/') : '',
     filename: utils.assetsPath('js/[name].[chunkhash].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
@@ -38,11 +38,14 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': env
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        compress: {
+          warnings: false
+        }
       },
-      sourceMap: true
+      sourceMap: config.build.productionSourceMap,
+      parallel: true
     }),
     // extract css into its own file
     new ExtractTextPlugin({
