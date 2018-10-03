@@ -2,10 +2,19 @@
 
 ---
 
-Linx.vue is a CLI tool to create applications that run on Web, Mobile Phones and Standalone Devices in a go. 
+Linx.vue is a boilerplate to create applications that run on Web, Mobile Phones and Standalone Devices in a go. 
 
-- It is the modified cli tool that was used in developing <https://github.com/scris/scristask> 1.10+.
-- Some code is from <https://github.com/halfrost/vue-objccn>, so I currently choose to use gplv3, however I will rewrite these 3 files one day and change the project into mit.
+- It is the modified environment that was used in developing <https://github.com/scris/scristask> 1.10+.
+- Some code is from <https://github.com/halfrost/vue-objccn>, so I currently choose to use GPL v3, however I will rewrite these 3 files one day and change the project into MIT.
+
+## Set Up
+
+You can use an CLI tool.
+
+``` bash
+npm install linx-cli -g
+linx g myproject
+```
 
 ## Build Setup
 
