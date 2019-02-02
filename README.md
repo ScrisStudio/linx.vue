@@ -65,6 +65,16 @@ npm run edev
 npm run ebuild
 ```
 
+If you get this:
+```
+TypeError: Cannot destructure property `compile` of 'undefined' or 'null'.
+```
+   - cd "your project directory"
+   - rm -rf node_modules
+   - change the version of "webpack-dev-server" to 2.9.1 in the file "package.json",
+   - npm install
+
+
 # Then
 
 Then edit your information in:
