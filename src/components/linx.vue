@@ -1,14 +1,9 @@
 <template>
-  <div id="mmain">
-    <el-card class="box-card" shadow="hover" id="today">
-      <div id="linxwelcome" class="today"> {{linxwelcome}} </div>
-    </el-card>
-    <el-card class="box-card" shadow="hover" id="taskmain">
-      <div id="linx" class="today"> 
-        <p>Linx.vue is a CLI tool to create applications that run on Web, Mobile Phones and Standalone Devices in a go. </p>
-        <p>I hope you will like it.</p>
+  <div id="linx-main">
+      <div id="linx-about" class="linx-about"> 
+        <p>Linx.vue is a CLI tool to create applications that run on Web, Mobile Phones and Standalone Devices in one go. </p>
+        <p>You are now using: {{ linxagent }}</p>
       </div>
-		</el-card>
   </div>
 </template>
 
@@ -20,15 +15,20 @@ export default {
   },
   data() {
     return {
-      linxwelcome: "Hello World!",
+      linxagent:'',
     };
   },
+  mounted() {
+    this.init()
+  },
   methods: {
-
+    init() {
+      if(process.env.LINX_AGENT == 'cordova') this.linxagent = 'Mobile Phones'
+      else if(process.env.LINX_AGENT == 'electron') this.linxagent = 'Standalone Devices'
+      else this.linxagent = 'Web Environment'
+    }
   }
 };
-
-
 </script>
 <style>
   .el-card {

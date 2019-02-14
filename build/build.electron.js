@@ -9,9 +9,9 @@ const path = require('path')
 const chalk = require('chalk')
 const webpack = require('webpack')
 const config = require('../config')
-const webpackConfig = require('./webpack.prod.app.conf')
+const webpackConfig = require('./webpack.prod.electron.conf')
 
-const spinner = ora('building for cordova...')
+const spinner = ora('building for electron...')
 spinner.start()
 
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {

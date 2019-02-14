@@ -7,7 +7,7 @@ Linx.vue is a boilerplate to create applications that run on Web, Mobile Phones 
 - It is the modified environment that was used in developing <https://github.com/scris/scristask> 1.10+.
 - Some code is from <https://github.com/halfrost/vue-objccn>, so I currently choose to use GPL v3, however I will rewrite these 3 files one day and change the project into MIT.
 
-## Build Setup
+# Setup
 
 ``` bash
 # install dependencies
@@ -20,7 +20,32 @@ npm install
 cordova platform add ios
 cordova platform add android
 cordova platform add browser
+```
 
+# Then
+
+Then edit your information in:
+
+	package.json
+    README.md
+    app/package.json
+
+
+Now it is time to build your web app.
+
+Just use it like using vue-cli. (with vue-router)
+
+You will find it easy to use.
+
+You can use `process.env.LINX_AGENT` to get which kind of devices is the user currently using.
+if you get `electron` , do things in standalone devices.
+if you get `cordova`, do things in mobile phones.
+if you get other answers or get nothing, mark it as in the web environment.
+
+
+# Commands
+
+``` bash
 # serve with hot reload at localhost:8080
 npm run dev
 
@@ -43,48 +68,28 @@ npm test
 npm run cdev
 cd app
 cordova run ios
+cordova run android
 
 # build for Cordova
 npm run cbuild
 cd app
 cordova run ios
+cordova run android
 
 # run Electron tests
 npm run edev
 
-# build for Electron
-npm run ebuild
+# before typing these lines,
+# build for Mac X64
+npm run emac
+
+# build for Windows X64
+npm run ewin
+
+# build for Linux X64
+npm run elinux
 ```
 
-If you get this:
-```
-TypeError: Cannot destructure property `compile` of 'undefined' or 'null'.
-```
-   - cd "your project directory"
-   - rm -rf node_modules
-   - change the version of "webpack-dev-server" to 2.9.1 in the file "package.json",
-   - npm install
-
-
-# Then
-
-Then edit your information in:
-
-	package.json
-    README.md
-    app/package.json
-    
-Now it is time to build your webapp. 
-
-Just use it like using vue-cli. (with vue-router and element-ui) 
-
-You will find it easy to use.
-
-Emm ... One thing left.
-You can use `process.env.LINX_AGENT` to get which mode is user currently using.
-if you get `electron` , do things in standalone devices.
-if you get `cordova`, do things in mobile phones.
-if you get other answer or get nothing, mark it as in the web environment.
 
 ---
 Dominik Qiu from Scris Studio 
