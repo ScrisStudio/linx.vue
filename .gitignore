@@ -3,7 +3,7 @@ Thumbs.db
 Desktop.ini
 node_modules/
 package-lock.json
-/dist/
+/dist/*
 !/dist/package.json
 !/dist/electron.js
 npm-debug.log*
