@@ -16,8 +16,9 @@
     "ewin": "node build/build.electron.js && electron-packager ./dist/ linxvue --platform=win32 --arch=x64 --icon=./src/assets/favicon.ico --overwrite",
     "emac": "node build/build.electron.js && electron-packager ./dist/ linxvue --platform=darwin --arch=x64 --icon=./src/assets/favicon.ico --overwrite",
     "elinux": "node build/build.electron.js && electron-packager ./dist/ linxvue --platform=linux --arch=x64 --icon=./src/assets/favicon.ico --overwrite",
-    "cdev": "cross-env LINX_AGENT=cordova node build/build.app.js && cd app && cordova run browser && cd ../",
-    "cbuild": "cross-env LINX_AGENT=cordova cross-env NODE_ENV=production node build/build.app.js && cd app && cordova run browser && cd ../"
+    "cbrowser": "node build/build.app.js && cd app && cordova run browser && cd ../",
+    "cios": "node build/build.app.js && cd app && cordova run ios && cd ../",
+    "candroid": "node build/build.app.js && cd app && cordova run android && cd ../"
   },
   "dependencies": {
     "vue": "^2.5.2",

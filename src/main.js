@@ -6,7 +6,6 @@ import router from './router';
 import cordova from './mobile-index';
 
 Vue.config.productionTip = false;
-Vue.prototype.lenv = process.env
 
 if(process.env.LINX_AGENT == 'cordova') {
   cordova.onDeviceReady = () => {

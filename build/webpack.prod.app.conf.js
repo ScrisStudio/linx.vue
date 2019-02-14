@@ -11,7 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-const env = config.build.env;
+const env = process.env.NODE_ENV = require('../config/c.env')
 
 config.build.index = path.resolve(__dirname, '../app/www/index.html')
 config.build.assetsRoot = path.resolve(__dirname, '../app/www')

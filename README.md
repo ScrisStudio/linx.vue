@@ -26,11 +26,19 @@ cordova platform add browser
 
 Then edit your information in:
 
-	package.json
-    README.md
-    app/package.json
+```bash
+# edit for vue
+package.json
 
+# edit README
+README.md
 
+# edit for cordova
+app/package.json
+
+# edit for electron
+dist/package.json 
+```
 Now it is time to build your web app.
 
 Just use it like using vue-cli. (with vue-router)
@@ -64,17 +72,14 @@ npm run e2e
 # run all tests
 npm test
 
-# run Cordova tests
-npm run cdev
-cd app
-cordova run ios
-cordova run android
+# build for Cordova (Browser)
+npm run cbrowser
 
-# build for Cordova
-npm run cbuild
-cd app
-cordova run ios
-cordova run android
+# build for iOS
+npm run cios
+
+# build for Android
+npm run candroid
 
 # run Electron tests
 npm run edev
