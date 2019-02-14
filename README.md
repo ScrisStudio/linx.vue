@@ -66,7 +66,6 @@ npm run candroid
 # run Electron tests
 npm run edev
 
-# before typing these lines,
 # build for Mac X64
 npm run emac
 
