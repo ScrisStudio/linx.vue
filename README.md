@@ -11,9 +11,9 @@ Linx.vue is a boilerplate to create applications that run on Web, Mobile Phones 
 
 ```bash
 vue init scris/linx.vuetemplate myproj
-npm install
+yarn
 cd app
-npm install
+yarn
 cordova platform add ios
 cordova platform add android
 cordova platform add browser
