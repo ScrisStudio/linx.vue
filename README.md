@@ -21,17 +21,16 @@ cordova platform add browser
 
 ## After setting up
 
-Now it is time to build your web app.
-
-Just use it like using vue-cli. 
-
+Now it is time to build your web app. 
+Just use it like using vue-cli 3. 
 You will find it easy to use.
 
-You can use `process.env.LINX_AGENT` to get which kind of devices is the user currently using.
-if you get `electron` , do things in standalone devices.
-if you get `cordova`, do things in mobile phones.
-if you get other answers or get nothing, mark it as in the web environment.
+You can use `process.env.LINX_AGENT` to get which kind of devices is the user currently using. 
+if you get `electron` , do things in standalone devices. 
+if you get `cordova`, do things in mobile phones. 
+if you get other answers or get nothing, mark it as in the web environment. 
 
+If you wanna make some changes for electron, go to see `dist/electron.js` as the main part and `dist/renderer.electron.js` as the renderer part.
 
 ## Commands
 
