@@ -2,7 +2,7 @@
   <div id="linx-main">
       <div id="linx-about" class="linx-about"> 
         <p>Linx.vue is a CLI tool to create applications that run on Web, Mobile Phones and Standalone Devices in one go. </p>
-        <p>You are now using: {{ linxagent }}</p>
+        <p>You are now using: <span v-html="linxagent"></span></p>
         <img src=".././assets/scris.png"/>
       </div>
   </div>
