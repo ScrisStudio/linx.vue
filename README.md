@@ -1,3 +1,5 @@
+**In a short period, it won't be continued, to find a good framework, you may see [Quasar](https://quasar.dev) or [cordova-electron](https://github.com/quasarframework/quasar)**
+
 <h3 align="center">linx.vue</h3>
 
 ---
